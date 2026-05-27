@@ -1,0 +1,12 @@
+worker node (data plane)
+
+kubelet > it ensures the pod is always in running state
+kubeproxy > for networking purpose
+container runtime > responsible for running containers eg: docker,containerd
+
+Master node (control plane)
+
+API server > it expose your Kubernetes 
+scheduler > responsible for scheduling resource in k8s
+etcd > store entire cluster data in key-value format
+controller manager > maintain the state of the pods like Replicaset
