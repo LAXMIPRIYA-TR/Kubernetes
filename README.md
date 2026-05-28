@@ -88,6 +88,8 @@ kops create cluster \
 ### 3. Preview and Apply the Infrastructure Configuration
 Generate a preview of the cloud footprint, then build the physical EC2 environments inside AWS:
 
+Note: It doesn't fall into free tier if you run update it starts to build the cluster.
+
 ```bash
 # Preview upcoming AWS infrastructure changes
 kops update cluster --name=\${NAME}
