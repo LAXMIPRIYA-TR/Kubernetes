@@ -78,10 +78,10 @@ Initialize the setup parameters. *Note: `t3.medium` and `t3.small` profiles are 
 kops create cluster \
   --name=\${NAME} \
   --zones=us-east-1a \
-  --master-size=t3.medium \
+  --control-plane-size=t3.medium \
   --node-size=t3.small \
   --node-count=1 \
-  --master-volume-size=8 \
+  --control-plane-volume-size=8 \
   --node-volume-size=8
 ```
 
